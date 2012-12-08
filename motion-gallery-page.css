@@ -1,7 +1,7 @@
 /* Gallery Styles */
 
 #hmg_motioncontainer_a {
-/*margin:0 auto;  Uncomment this line if you wish to center the gallery on page */
+margin:0 auto;  /* Uncomment this line if you wish to center the gallery on page */
 width: 100%; /* Set to gallery width, in px or percentage */
 height: 90px; /* Set to gallery height */
 }

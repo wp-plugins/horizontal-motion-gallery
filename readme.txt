@@ -1,8 +1,8 @@
 === Horizontal motion gallery ===
 Contributors: www.gopiplus.com, gopiplus 
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 5.0
+Tested up to: 3.5
+Stable tag: 6.0
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
@@ -14,8 +14,6 @@ This is a flexible gallery; User can direct both the image scrolling direction, 
 
 == Description ==
 
-**Very Very Important : Before update the plugin, please backup your existing plug-in XML files & images**
-
 Official website for live demo [http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/](http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/)
 
 *  [Live Demo](http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/)		
@@ -25,9 +23,6 @@ Official website for live demo [http://www.gopiplus.com/work/2010/07/18/horizont
 1. This plug-in will create the Horizontal motion gallery on wordpress site.  
 2. The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery.
 3. Clicking on an image will target new link.
-4. This is an XML based slideshow gallery.
-5. Optionally hyperlink each images.
-7. Optionally target hyperlink option for each image.
 
 == Installation ==
 
@@ -54,41 +49,59 @@ In the above mentioned CSS file you can change the height and width of the galle
 
 1. Gallery in post/page http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
-2. Gallery in footer http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
-
-3. Admin http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
+2. Admin http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Upgrade Notice ==
 
+= 6.0 =
+
+Tested up to 3.5
+In this version we have removed the XML concept. Introduced option to load the images directly from the folder. thus no hyper link option to the images.
+
 = 5.0 =
-New demo link, www.gopiplus.com
-Tested upto 3.4.1
+
+New demo link, http://www.gopiplus.com
+Tested up to 3.4.1
 
 = 4.0 =
-Tested upto 3.4
+
+Tested up to 3.4
 
 = 3.0 =
-Tested upto 3.3
+
+Tested up to 3.3
 
 = 2.0 =
-Tested upto 3.0.1
+
+Tested up to 3.0.1
 
 = 1.0 =
+
 First version
 
 == Changelog ==
 
+= 6.0 =
+
+Tested up to 3.5
+In this version we have removed the XML concept. Introduced option to load the images directly from the folder. thus no hyper link option to the images.
+
 = 5.0 =
-New demo link, www.gopiplus.com
+
+New demo link, http://www.gopiplus.com
 
 = 4.0 =
-Tested upto 3.4
+
+Tested up to 3.4
 
 = 3.0 =
-Tested upto 3.3
+
+Tested up to 3.3
 
 = 2.0 =
-Tested upto 3.0.1
+
+Tested up to 3.0.1
 
 = 1.0 =
+
 First version
