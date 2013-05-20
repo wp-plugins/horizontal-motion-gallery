@@ -1,8 +1,8 @@
 === Horizontal motion gallery ===
 Contributors: www.gopiplus.com, gopiplus 
-Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 6.0
+Requires at least: 3.4
+Tested up to: 3.6
+Stable tag: 7.0
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
@@ -53,6 +53,10 @@ In the above mentioned CSS file you can change the height and width of the galle
 
 == Upgrade Notice ==
 
+= 7.0 =
+
+Tested up to 3.6
+
 = 6.0 =
 
 Tested up to 3.5
@@ -80,6 +84,10 @@ Tested up to 3.0.1
 First version
 
 == Changelog ==
+
+= 7.0 =
+
+Tested up to 3.6
 
 = 6.0 =
 
