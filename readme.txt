@@ -2,7 +2,7 @@
 Contributors: www.gopiplus.com, gopiplus 
 Requires at least: 3.4
 Tested up to: 3.6
-Stable tag: 7.0
+Stable tag: 7.1
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
@@ -37,13 +37,7 @@ Official website for live demo [http://www.gopiplus.com/work/2010/07/18/horizont
     
 == Frequently Asked Questions ==
 
-**Where to upload my image?**  
-add/edit/delete images in this XMl file. "gallery/widget.xml"
-
-**How to set Height and width?**  
-motion-gallery.css
-motion-gallery-page.css
-In the above mentioned CSS file you can change the height and width of the gallery.
+http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Screenshots ==
 
@@ -52,6 +46,10 @@ In the above mentioned CSS file you can change the height and width of the galle
 2. Admin http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Upgrade Notice ==
+
+= 7.1 =
+
+Minor change in the admin layout.
 
 = 7.0 =
 
@@ -84,6 +82,10 @@ Tested up to 3.0.1
 First version
 
 == Changelog ==
+
+= 7.1 =
+
+Minor change in the admin layout.
 
 = 7.0 =
 

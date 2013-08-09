@@ -5,7 +5,7 @@ Plugin Name: Horizontal motion gallery
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Description: Horizontal motion gallery is a flexible gallery script,The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery.  
 Author: Gopi.R
-Version: 7.0
+Version: 7.1
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 License: GPLv2 or later
@@ -37,54 +37,81 @@ function my_hmg_widget($args)
 
 function my_hmg_admin_option() 
 {
-	echo "<div class='wrap'>";
-	echo "<h2>Horizontal motion gallery</h2>"; 
-    
-	$my_hmg_dir1 = get_option('my_hmg_dir1');
-	$my_hmg_dir2 = get_option('my_hmg_dir2');
-	$my_hmg_dir3 = get_option('my_hmg_dir3');
-	$my_hmg_dir4 = get_option('my_hmg_dir4');
-	$my_hmg_dir5 = get_option('my_hmg_dir5');
-	
-	if (@$_POST['my_hmg_submit']) 
-	{
-		$my_hmg_dir1 = stripslashes($_POST['my_hmg_dir1']);
-		$my_hmg_dir2 = stripslashes($_POST['my_hmg_dir2']);
-		$my_hmg_dir3 = stripslashes($_POST['my_hmg_dir3']);
-		$my_hmg_dir4 = stripslashes($_POST['my_hmg_dir4']);
-		$my_hmg_dir5 = stripslashes($_POST['my_hmg_dir5']);
-		
-		update_option('my_hmg_dir1', $my_hmg_dir1 );
-		update_option('my_hmg_dir2', $my_hmg_dir2 );
-		update_option('my_hmg_dir3', $my_hmg_dir3 );
-		update_option('my_hmg_dir4', $my_hmg_dir4 );
-		update_option('my_hmg_dir5', $my_hmg_dir5 );
-	}
-
-	echo '<form name="my_hmg_form" method="post" action="">';
-	echo '<p>Directory 1:<br><input  style="width: 650px;" type="text" value="';
-	echo $my_hmg_dir1 . '" name="my_hmg_dir1" id="my_hmg_dir1" /></p>';
-	echo '<p>Directory 2:<br><input style="width: 650px;" type="text" value="';
-	echo $my_hmg_dir2 . '" name="my_hmg_dir2" id="my_hmg_dir2" /></p>';
-	echo '<p>Directory 3:<br><input style="width: 650px;" type="text" value="';
-	echo $my_hmg_dir3 . '" name="my_hmg_dir3" id="my_hmg_dir3" /></p>';
-	echo '<p>Directory 4:<br><input style="width: 650px;" type="text" value="';
-	echo $my_hmg_dir4 . '" name="my_hmg_dir4" id="my_hmg_dir4" /></p>';
-	echo '<p>Directory 5:<br><input style="width: 650px;" type="text" value="';
-	echo $my_hmg_dir5 . '" name="my_hmg_dir5" id="my_hmg_dir5" /></p>';
-	echo '<input name="my_hmg_submit" id="my_hmg_submit" class="button-primary" value="Submit" type="submit" />';
-	echo '</form>';
 	?>
-	<br>
-	<h2>Plugin configuration</h2>
-	<ol>
-		<li>Drag and drop the widget</li>
-		<li>Add the gallery in the posts and pages</li>
-		<li>Add directly in the theme</li>
-	</ol>
-	Note: Check official website for more information <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/">click here</a>.<br>
+	<div class="wrap">
+		<div class="form-wrap">
+			<div id="icon-edit" class="icon32 icon32-posts-post"><br></div>
+				<h2>Horizontal motion gallery</h2>
+				<?php
+				$my_hmg_dir1 = get_option('my_hmg_dir1');
+				$my_hmg_dir2 = get_option('my_hmg_dir2');
+				$my_hmg_dir3 = get_option('my_hmg_dir3');
+				$my_hmg_dir4 = get_option('my_hmg_dir4');
+				$my_hmg_dir5 = get_option('my_hmg_dir5');
+			
+				if (isset($_POST['my_hmg_form_submit']) && $_POST['my_hmg_form_submit'] == 'yes')
+				{
+					//	Just security thingy that wordpress offers us
+					check_admin_referer('my_hmg_form_setting');
+						
+					$my_hmg_dir1 = stripslashes($_POST['my_hmg_dir1']);
+					$my_hmg_dir2 = stripslashes($_POST['my_hmg_dir2']);
+					$my_hmg_dir3 = stripslashes($_POST['my_hmg_dir3']);
+					$my_hmg_dir4 = stripslashes($_POST['my_hmg_dir4']);
+					$my_hmg_dir5 = stripslashes($_POST['my_hmg_dir5']);
+					
+					update_option('my_hmg_dir1', $my_hmg_dir1 );
+					update_option('my_hmg_dir2', $my_hmg_dir2 );
+					update_option('my_hmg_dir3', $my_hmg_dir3 );
+					update_option('my_hmg_dir4', $my_hmg_dir4 );
+					update_option('my_hmg_dir5', $my_hmg_dir5 );
+					
+					?>
+					<div class="updated fade">
+						<p><strong>Details successfully updated.</strong></p>
+					</div>
+					<?php
+				}
+				?>
+				<h3>Plugin setting</h3>
+				<form name="my_hmg_form" method="post" action="#">
+					
+					<label for="tag-title">Directory 1</label>
+					<input name="my_hmg_dir1" type="text" value="<?php echo $my_hmg_dir1; ?>"  id="my_hmg_dir1" size="120">
+					<p>Please enter your image directory.</p>
+					
+					<label for="tag-title">Directory 2</label>
+					<input name="my_hmg_dir2" type="text" value="<?php echo $my_hmg_dir2; ?>"  id="my_hmg_dir2" size="120">
+					<p>Please enter your image directory.</p>
+					
+					<label for="tag-title">Directory 3</label>
+					<input name="my_hmg_dir3" type="text" value="<?php echo $my_hmg_dir3; ?>"  id="my_hmg_dir3" size="120">
+					<p>Please enter your image directory.</p>
+					
+					<label for="tag-title">Directory 4</label>
+					<input name="my_hmg_dir4" type="text" value="<?php echo $my_hmg_dir4; ?>"  id="my_hmg_dir4" size="120">
+					<p>Please enter your image directory.</p>
+					
+					<label for="tag-title">Directory 5</label>
+					<input name="my_hmg_dir5" type="text" value="<?php echo $my_hmg_dir5; ?>"  id="my_hmg_dir5" size="120">
+					<p>Please enter your image directory.</p>
+					
+					<div style="height:10px;"></div>
+					<input type="hidden" name="my_hmg_form_submit" value="yes"/>
+					<input name="my_hmg_submit" id="my_hmg_submit" class="button" value="Submit" type="submit" />
+					<a class="button" target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/">Help</a>
+					<?php wp_nonce_field('my_hmg_form_setting'); ?>
+				</form>
+			</div>
+		<h3>Plugin configuration option</h3>
+		<ol>
+			<li>Drag and drop the widget to your sidebar.</li>
+			<li>Add directly in to the theme using PHP code.</li>
+			<li>Add the plugin in the posts or pages using short code.</li>
+		</ol>
+		<p class="description">Check official website for more information <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/">click here</a></p>
+	</div>
 	<?php
-	echo "</div>";
 }
 
 function my_hmg_deactivation() 
@@ -94,7 +121,7 @@ function my_hmg_deactivation()
 
 function my_hmg_add_to_menu() 
 {
-	add_options_page('Horizontal motion gallery', 'Horizontal motion gallery', 'manage_options', __FILE__, 'my_hmg_admin_option' );
+	add_options_page('Horizontal motion gallery', 'Horizontal motion gallery', 'manage_options', 'horizontal-motion-gallery', 'my_hmg_admin_option' );
 }
 
 if (is_admin()) 
