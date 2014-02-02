@@ -1,11 +1,10 @@
 <?php
-
 /*
 Plugin Name: Horizontal motion gallery
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Description: Horizontal motion gallery is a flexible gallery script,The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery.  
 Author: Gopi.R
-Version: 7.1
+Version: 7.2
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 License: GPLv2 or later
@@ -41,7 +40,7 @@ function my_hmg_admin_option()
 	<div class="wrap">
 		<div class="form-wrap">
 			<div id="icon-edit" class="icon32 icon32-posts-post"><br></div>
-				<h2>Horizontal motion gallery</h2>
+				<h2><?php _e('Horizontal motion gallery', 'horizontal-motion-gallery'); ?></h2>
 				<?php
 				$my_hmg_dir1 = get_option('my_hmg_dir1');
 				$my_hmg_dir2 = get_option('my_hmg_dir2');
@@ -68,48 +67,50 @@ function my_hmg_admin_option()
 					
 					?>
 					<div class="updated fade">
-						<p><strong>Details successfully updated.</strong></p>
+						<p><strong><?php _e('Details successfully updated.', 'horizontal-motion-gallery'); ?></strong></p>
 					</div>
 					<?php
 				}
 				?>
-				<h3>Plugin setting</h3>
+				<h3><?php _e('Plugin setting', 'horizontal-motion-gallery'); ?></h3>
 				<form name="my_hmg_form" method="post" action="#">
 					
-					<label for="tag-title">Directory 1</label>
+					<label for="tag-title"><?php _e('Directory 1 (Default for widget)', 'horizontal-motion-gallery'); ?></label>
 					<input name="my_hmg_dir1" type="text" value="<?php echo $my_hmg_dir1; ?>"  id="my_hmg_dir1" size="120">
-					<p>Please enter your image directory.</p>
+					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?> (Example: wp-content/plugins/horizontal-motion-gallery/gallery1/)</p>
 					
-					<label for="tag-title">Directory 2</label>
+					<label for="tag-title"><?php _e('Directory 2', 'horizontal-motion-gallery'); ?></label>
 					<input name="my_hmg_dir2" type="text" value="<?php echo $my_hmg_dir2; ?>"  id="my_hmg_dir2" size="120">
-					<p>Please enter your image directory.</p>
+					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?> (Example: wp-content/plugins/horizontal-motion-gallery/gallery1/)</p>
 					
-					<label for="tag-title">Directory 3</label>
+					<label for="tag-title"><?php _e('Directory 3', 'horizontal-motion-gallery'); ?></label>
 					<input name="my_hmg_dir3" type="text" value="<?php echo $my_hmg_dir3; ?>"  id="my_hmg_dir3" size="120">
-					<p>Please enter your image directory.</p>
+					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?></p>
 					
-					<label for="tag-title">Directory 4</label>
+					<label for="tag-title"><?php _e('Directory 4', 'horizontal-motion-gallery'); ?></label>
 					<input name="my_hmg_dir4" type="text" value="<?php echo $my_hmg_dir4; ?>"  id="my_hmg_dir4" size="120">
-					<p>Please enter your image directory.</p>
+					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?></p>
 					
-					<label for="tag-title">Directory 5</label>
+					<label for="tag-title"><?php _e('Directory 5', 'horizontal-motion-gallery'); ?></label>
 					<input name="my_hmg_dir5" type="text" value="<?php echo $my_hmg_dir5; ?>"  id="my_hmg_dir5" size="120">
-					<p>Please enter your image directory.</p>
+					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?></p>
 					
 					<div style="height:10px;"></div>
 					<input type="hidden" name="my_hmg_form_submit" value="yes"/>
-					<input name="my_hmg_submit" id="my_hmg_submit" class="button" value="Submit" type="submit" />
-					<a class="button" target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/">Help</a>
+					<input name="my_hmg_submit" id="my_hmg_submit" class="button" value="<?php _e('Submit', 'horizontal-motion-gallery'); ?>" type="submit" />
+					<a class="button" target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/">
+					<?php _e('Help', 'horizontal-motion-gallery'); ?></a>
 					<?php wp_nonce_field('my_hmg_form_setting'); ?>
 				</form>
 			</div>
-		<h3>Plugin configuration option</h3>
+		<h3><?php _e('Plugin configuration option', 'horizontal-motion-gallery'); ?></h3>
 		<ol>
-			<li>Drag and drop the widget to your sidebar.</li>
-			<li>Add directly in to the theme using PHP code.</li>
-			<li>Add the plugin in the posts or pages using short code.</li>
+			<li><?php _e('Drag and drop the widget to your sidebar.', 'horizontal-motion-gallery'); ?></li>
+			<li><?php _e('Add directly in to the theme using PHP code.', 'horizontal-motion-gallery'); ?></li>
+			<li><?php _e('Add the plugin in the posts or pages using short code', 'horizontal-motion-gallery'); ?>.</li>
 		</ol>
-		<p class="description">Check official website for more information <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/">click here</a></p>
+		<p class="description"><?php _e('Check official website for more information', 'horizontal-motion-gallery'); ?> 
+		<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/"><?php _e('click here', 'horizontal-motion-gallery'); ?></a></p>
 	</div>
 	<?php
 }
@@ -121,7 +122,8 @@ function my_hmg_deactivation()
 
 function my_hmg_add_to_menu() 
 {
-	add_options_page('Horizontal motion gallery', 'Horizontal motion gallery', 'manage_options', 'horizontal-motion-gallery', 'my_hmg_admin_option' );
+	add_options_page( __('Motion Gallery', 'horizontal-motion-gallery'), 
+			__('Motion Gallery', 'horizontal-motion-gallery'), 'manage_options', 'horizontal-motion-gallery', 'my_hmg_admin_option' );
 }
 
 if (is_admin()) 
@@ -131,22 +133,32 @@ if (is_admin())
 
 function my_hmg_control() 
 {
-	echo "Horizontal motion gallery";
+	echo '<p><b>';
+	_e('Motion Gallery', 'horizontal-motion-gallery');
+	echo '.</b> ';
+	_e('Check official website for more information', 'horizontal-motion-gallery');
+	?> <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/horizontal-scroll-image-slideshow/"><?php _e('click here', 'horizontal-motion-gallery'); ?></a></p><?php
 }
 
 function my_hmg_init()
 {
 	if(function_exists('wp_register_sidebar_widget')) 
 	{
-		wp_register_sidebar_widget('Motion Gallery', 'Motion Gallery', 'my_hmg_widget');
+		wp_register_sidebar_widget( __('Motion Gallery', 'horizontal-motion-gallery'), __('Motion Gallery', 'horizontal-motion-gallery'), 'my_hmg_widget');
 	}
 	
 	if(function_exists('wp_register_widget_control')) 
 	{
-		wp_register_widget_control('Motion Gallery', array('Motion Gallery', 'widgets'), 'my_hmg_control');
+		wp_register_widget_control( __('Motion Gallery', 'horizontal-motion-gallery'), array( __('Motion Gallery', 'horizontal-motion-gallery'), 'widgets'), 'my_hmg_control');
 	} 
 }
 
+function my_hmg_textdomain() 
+{
+	  load_plugin_textdomain( 'horizontal-motion-gallery', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
+add_action('plugins_loaded', 'my_hmg_textdomain');
 add_action("plugins_loaded", "my_hmg_init");
 register_activation_hook(__FILE__, 'my_hmg_install');
 register_deactivation_hook(__FILE__, 'my_hmg_deactivation');
@@ -155,7 +167,7 @@ add_shortcode( 'motion-gallery', 'my_hmg_shortcode' );
 function my_hmg_shortcode( $atts ) 
 {
 	$my_hmg_package = "";
-	$$my_hmg_output = "";
+	$my_hmg_output = "";
 	global $my_hmg_scriptinserted;
 	
 	// [motion-gallery dir="dir1"]

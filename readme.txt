@@ -1,8 +1,8 @@
 === Horizontal motion gallery ===
 Contributors: www.gopiplus.com, gopiplus 
 Requires at least: 3.4
-Tested up to: 3.6
-Stable tag: 7.1
+Tested up to: 3.8
+Stable tag: 7.2
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
@@ -41,11 +41,17 @@ http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Screenshots ==
 
-1. Gallery in post/page http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
+1. Front Screen. http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
-2. Admin http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
+2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Upgrade Notice ==
+
+= 7.2 =	
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (horizontal-motion-gallery.po) available in the languages folder.
 
 = 7.1 =
 
@@ -82,6 +88,12 @@ Tested up to 3.0.1
 First version
 
 == Changelog ==
+
+= 7.2 =	
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (horizontal-motion-gallery.po) available in the languages folder.
 
 = 7.1 =
 
