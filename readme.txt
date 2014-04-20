@@ -1,8 +1,8 @@
 === Horizontal motion gallery ===
 Contributors: www.gopiplus.com, gopiplus 
 Requires at least: 3.4
-Tested up to: 3.8
-Stable tag: 7.2
+Tested up to: 3.9
+Stable tag: 7.3
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
@@ -20,9 +20,9 @@ Official website for live demo [http://www.gopiplus.com/work/2010/07/18/horizont
 *  [More Information](http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/)				
 *  [User Comments](http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/)		
 
-1. This plug-in will create the Horizontal motion gallery on wordpress site.  
-2. The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery.
-3. Clicking on an image will target new link.
+Horizontal motion gallery WordPress plugin create the motion image gallery in the pages and post.. The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery. Clicking on an image will target new link and optionally hyperlink each images. This is an XML based slideshow gallery so we have create the XML file with image IRL.
+
+Do you want to scroll the image automatically without mouse over? use image horizontal reel scroll slideshow WordPress plugin.
 
 == Installation ==
 
@@ -46,6 +46,10 @@ http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Upgrade Notice ==
+
+= 7.3 =	
+
+1. Tested up to 3.9
 
 = 7.2 =	
 
@@ -88,6 +92,10 @@ Tested up to 3.0.1
 First version
 
 == Changelog ==
+
+= 7.3 =	
+
+1. Tested up to 3.9
 
 = 7.2 =	
 
