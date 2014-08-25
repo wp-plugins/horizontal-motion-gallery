@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Horizontal motion gallery\n"
-"POT-Creation-Date: 2014-02-02 12:40+0800\n"
-"PO-Revision-Date: 2014-02-02 12:40+0800\n"
+"POT-Creation-Date: 2014-08-02 13:55+0800\n"
+"PO-Revision-Date: 2014-08-02 13:55+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -55,36 +55,36 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:101
+#: ../horizontal-motion-gallery.php:102
 msgid "Help"
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:105
+#: ../horizontal-motion-gallery.php:106
 msgid "Plugin configuration option"
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:107
+#: ../horizontal-motion-gallery.php:108
 msgid "Drag and drop the widget to your sidebar."
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:108
+#: ../horizontal-motion-gallery.php:109
 msgid "Add directly in to the theme using PHP code."
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:109
+#: ../horizontal-motion-gallery.php:110
 msgid "Add the plugin in the posts or pages using short code"
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:111 ../horizontal-motion-gallery.php:138
+#: ../horizontal-motion-gallery.php:112 ../horizontal-motion-gallery.php:139
 msgid "Check official website for more information"
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:112 ../horizontal-motion-gallery.php:139
+#: ../horizontal-motion-gallery.php:113 ../horizontal-motion-gallery.php:140
 msgid "click here"
 msgstr ""
 
-#: ../horizontal-motion-gallery.php:124 ../horizontal-motion-gallery.php:125
-#: ../horizontal-motion-gallery.php:136 ../horizontal-motion-gallery.php:146
-#: ../horizontal-motion-gallery.php:151
+#: ../horizontal-motion-gallery.php:125 ../horizontal-motion-gallery.php:126
+#: ../horizontal-motion-gallery.php:137 ../horizontal-motion-gallery.php:147
+#: ../horizontal-motion-gallery.php:152
 msgid "Motion Gallery"
 msgstr ""

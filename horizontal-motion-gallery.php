@@ -4,7 +4,7 @@ Plugin Name: Horizontal motion gallery
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Description: Horizontal motion gallery is a flexible gallery script,The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery.  
 Author: Gopi Ramasamy
-Version: 7.3
+Version: 7.4
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 License: GPLv2 or later
@@ -76,23 +76,23 @@ function my_hmg_admin_option()
 				<form name="my_hmg_form" method="post" action="#">
 					
 					<label for="tag-title"><?php _e('Directory 1 (Default for widget)', 'horizontal-motion-gallery'); ?></label>
-					<input name="my_hmg_dir1" type="text" value="<?php echo $my_hmg_dir1; ?>"  id="my_hmg_dir1" size="120">
+					<input name="my_hmg_dir1" type="text" value="<?php echo $my_hmg_dir1; ?>"  id="my_hmg_dir1" size="90">
 					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?> (Example: wp-content/plugins/horizontal-motion-gallery/gallery1/)</p>
 					
 					<label for="tag-title"><?php _e('Directory 2', 'horizontal-motion-gallery'); ?></label>
-					<input name="my_hmg_dir2" type="text" value="<?php echo $my_hmg_dir2; ?>"  id="my_hmg_dir2" size="120">
+					<input name="my_hmg_dir2" type="text" value="<?php echo $my_hmg_dir2; ?>"  id="my_hmg_dir2" size="90">
 					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?> (Example: wp-content/plugins/horizontal-motion-gallery/gallery1/)</p>
 					
 					<label for="tag-title"><?php _e('Directory 3', 'horizontal-motion-gallery'); ?></label>
-					<input name="my_hmg_dir3" type="text" value="<?php echo $my_hmg_dir3; ?>"  id="my_hmg_dir3" size="120">
+					<input name="my_hmg_dir3" type="text" value="<?php echo $my_hmg_dir3; ?>"  id="my_hmg_dir3" size="90">
 					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?></p>
 					
 					<label for="tag-title"><?php _e('Directory 4', 'horizontal-motion-gallery'); ?></label>
-					<input name="my_hmg_dir4" type="text" value="<?php echo $my_hmg_dir4; ?>"  id="my_hmg_dir4" size="120">
+					<input name="my_hmg_dir4" type="text" value="<?php echo $my_hmg_dir4; ?>"  id="my_hmg_dir4" size="90">
 					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?></p>
 					
 					<label for="tag-title"><?php _e('Directory 5', 'horizontal-motion-gallery'); ?></label>
-					<input name="my_hmg_dir5" type="text" value="<?php echo $my_hmg_dir5; ?>"  id="my_hmg_dir5" size="120">
+					<input name="my_hmg_dir5" type="text" value="<?php echo $my_hmg_dir5; ?>"  id="my_hmg_dir5" size="90">
 					<p><?php _e('Please enter your image directory.', 'horizontal-motion-gallery'); ?></p>
 					
 					<div style="height:10px;"></div>
