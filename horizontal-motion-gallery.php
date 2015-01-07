@@ -4,7 +4,7 @@ Plugin Name: Horizontal motion gallery
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Description: Horizontal motion gallery is a flexible gallery script,The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery.  
 Author: Gopi Ramasamy
-Version: 7.4
+Version: 7.5
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 License: GPLv2 or later

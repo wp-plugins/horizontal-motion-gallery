@@ -1,8 +1,8 @@
 === Horizontal motion gallery ===
 Contributors: www.gopiplus.com, gopiplus 
 Requires at least: 3.4
-Tested up to: 4.0
-Stable tag: 7.4
+Tested up to: 4.1
+Stable tag: 7.5
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
@@ -46,6 +46,10 @@ http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Upgrade Notice ==
+
+= 7.5 =	
+
+1. Tested up to 4.1
 
 = 7.4 =	
 
@@ -96,6 +100,10 @@ Tested up to 3.0.1
 First version
 
 == Changelog ==
+
+= 7.5 =	
+
+1. Tested up to 4.1
 
 = 7.4 =	
 
