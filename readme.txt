@@ -1,8 +1,8 @@
 === Horizontal motion gallery ===
 Contributors: www.gopiplus.com, gopiplus 
 Requires at least: 3.4
-Tested up to: 4.2.2
-Stable tag: 7.6
+Tested up to: 4.3.1
+Stable tag: 7.8
 Author URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 Donate link: http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
@@ -23,6 +23,11 @@ Official website for live demo [http://www.gopiplus.com/work/2010/07/18/horizont
 Horizontal motion gallery WordPress plugin create the motion image gallery in the pages and post.. The user can direct both the image scrolling direction and speed just by placing the mouse on either side of the image gallery. Clicking on an image will target new link and optionally hyperlink each images. This is an XML based slideshow gallery so we have create the XML file with image IRL.
 
 Do you want to scroll the image automatically without mouse over? use my "image horizontal reel scroll slideshow" WordPress plugin.
+
+= Translators =
+
+* English (en_EN) - [Gopi Ramasamy](http://www.gopiplus.com/)
+* Polish (pl_PL) - [Abdul Sattar](https://www.couponmachine.in/)
 
 == Installation ==
 
@@ -46,6 +51,15 @@ http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/horizontal-motion-gallery/
 
 == Upgrade Notice ==
+
+= 7.8 =	
+
+1. Tested up to 4.3.1
+2. Text Domain slug has been added for Language Packs.
+
+= 7.7 =	
+
+1. Tested up to 4.3
 
 = 7.6 =	
 
@@ -104,6 +118,15 @@ Tested up to 3.0.1
 First version
 
 == Changelog ==
+
+= 7.8 =	
+
+1. Tested up to 4.3.1
+2. Text Domain slug has been added for Language Packs.
+
+= 7.7 =	
+
+1. Tested up to 4.3
 
 = 7.6 =	
 
